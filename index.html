@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Learning login</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="logo"><span style="color: rgb(37, 235, 143);">E-</span>Learning</div>
+    
+    <div class="container">   
+        <div id="msg_error"></div>
+        <div class="box_login">
+            <p class="header_login">LOG IN</p>
+            <P class="desc_login">Hello ! Log Up now and enter your information to register on our website.</P>
+            
+            <div class="form">
+                <form method="POST" name="form_login" id="form">                    
+                    <input type="text" name="user_name" id="user_name" placeholder="Your Full Name"  autocomplete="on">
+                    <input type="password" name="user_pass" id="user_pass" placeholder="Password" >
+                </form>
+            <input type="submit" name="login" value="Login" id="btn_login" onclick="login()">                
+
+            </div>
+            <div class="go_logup">
+                <p>you have an account? <button onclick="to_logup()">Log up now!</button></p>
+            </div>
+            
+        </div>
+        <div style="position: relative; top: 220px; float: left;width: 45%; padding-right: 20px; ">
+            <h5>Teacher Account:</h5>
+            <p style="line-height: 15px; font-size: 0.8em; margin-top: -20px;">Username: <span style="font-style: italic;">Omar_Khalid@iug</span></p>
+            <p style="line-height: 15px; font-size: 0.8em; margin-top: -10px;">Password:<span style="font-style: italic;"> 1234567</span></p>
+        </div>
+        <div style="position: relative; top: 52%; float: right; width: 45%;">
+            <h5>Student Account:</h5>
+            <p style="line-height: 15px; font-size: 0.8em; margin-top: -20px;">Username: <span style="font-style: italic;">AbdAlmjed_Skaik@std</span></p>
+            <p style="line-height: 15px; font-size: 0.8em; margin-top: -10px;">Password:<span style="font-style: italic;"> 0123456</span></p>
+        </div>
+    </div>
+    
+
+
+
+<script src="js/script_login.js">
+</script>
+
+
+</body>
+</html>
