@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teacher Page</title>
+    <link rel="stylesheet" href="css/styleSTD.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/fontawsom.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <img src="img/iug_img.jpg" alt="cover" class="cover">
+
+    <div class="logo"> <span style="color: rgb(37, 235, 143);">E-</span>Learning</div>
+    <div id="bg_menu"></div>
+    <ul class="menu">
+        <li><a href="#std_info">Teacher</a></li>
+        <li><a href="#std_avg">CRUD</a></li>
+        <li><a onclick="signOut()">Sign Out</a></li>
+    </ul>
+    <div id="std_info" style="top: 90px;"></div>
+    <div class="information_std">
+        <p class="block_name" id="block_name" style="  padding: 12px 50px 12px 12px;position: absolute; top: 100px; left: 360px;"><span style="font-weight: 300;">I'm</span> </p>
+    <hr><div id="bg_aboutIUG"></div>
+    <div style="position: absolute; top: 210px; left: 400px; width: 600px;color: #fff;">
+        
+        <p class="about_me">About me:</p>
+        <p class="para_about">An extensive list of verbs and phrases that, New teachers will find this resource particularly valuable when they're writing their first report cards and progress reports.</p>
+    </div>
+    <img src="img/employee.jpg" alt="employee" class="employee_img">
+
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+
+    <div id="std_avg" style="position: absolute; top: 380px;"></div>
+    <div class="container container2">
+        <h1>CRUD Application</h1>
+        <form name="userForm" onsubmit="create_user()">
+            <div class="form-group">
+                <input type="text" id="id" placeholder="ID" disabled name="id">
+                <input type="text" class="name" placeholder="username" name="username">
+                <input type="email" class="" placeholder="email" name="email">
+                <input type="text" class="" placeholder="password" name="password">
+            </div>
+            
+            <div class="btn">
+                <button class="create" type="submit">Create</button>
+                <button class="read" type="button" onclick="read_users()">Read</button>
+                <button class="update" type="button" onclick="update_user()">Update</button>
+                <button class="delete" type="button" onclick="delete_all()">Delate</button>
+                <button class="logout" type="button" onclick="logout()">logout</button>
+            </div>
+        
+        </form>
+        <div>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">username</th>
+                        <th scope="col">email</th>
+                        <th scope="col">password</th>
+                        <th scope="col">edit</th>
+                        <th scope="col">delete</th>
+                    </tr>
+                </thead>
+                <tbody id="user_data">
+                   
+                </tbody>
+            </table>
+
+        
+
+        </div>
+
+    </div>
+    
+    <script src="js/script_iug.js"></script>
+
+
+
+
+    
+</body>
+</html>

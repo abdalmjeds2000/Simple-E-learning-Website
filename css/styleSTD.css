@@ -1,0 +1,341 @@
+body {
+    font-family: 'Outfit', sans-serif;
+	padding: 0;
+    margin: 0;
+    background-color: #eee;
+    height: 1200px;
+}
+
+#std_info{
+    position: absolute;
+    top: 130px;
+}
+
+.logo{
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bolder;
+	position: absolute;
+	top: 25px;
+	left: 50px;
+}
+
+.menu {
+    position: absolute;
+    top: 15px;
+    left: 900px;
+    
+}
+.menu li {
+    list-style: none;
+    display: inline;
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu a:hover{
+    color: rgb(37, 235, 143);
+}
+
+a{
+    cursor: pointer;
+}
+
+.cover{
+    background-attachment: fixed;
+    object-fit: cover;
+    width: 100%;   
+    height: 400px;
+    
+}
+
+.container{
+    width: 55%;
+    padding: 70px;
+    background-color: #fff;
+    position: absolute;
+    top: 150px;
+    left: 17.5%;
+    box-shadow: 3px 3px 25px 2px #ccc;
+}
+
+.photo_std img{
+    width: 300px;
+    float: left;
+}
+
+
+.information_std{
+    padding-left: 340px;
+}
+
+.block_name {
+    font-size: 1.8em;
+    font-weight: 600;
+    padding: 12px 0px 33px 12px;
+    border-left: 8px rgb(37, 235, 143) solid;
+    background-color: rgb(245, 245, 245);
+}
+
+.job {
+    font-size: 1em;
+    font-weight: 400;
+    position: absolute;
+    top: 130px;
+    left: 430px;
+}
+hr {
+    border:0.5px solid #555;
+    margin-top: -10px;    
+}
+
+.desc_std ul{
+    display: inline;
+    list-style: none;
+    float: left;
+    margin-left: -30px;
+}
+
+.header_info li{
+    padding-bottom: 12px;
+    font-weight: bold;
+
+}
+
+._info li{
+    padding-bottom: 12px;
+    font-weight: 300;
+    margin-left: 70px;
+}
+
+.about_me{
+    font-weight: bold;
+    font-size: 1em;
+}
+.para_about{
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-top: -10px;
+}
+
+
+
+/* ***************************************** */
+
+#std_avg{
+    position: absolute;
+    top: 770px;
+}
+
+.std_avg{
+    width: 55%;
+    height: 510px;
+    padding: 70px;
+    background-color: #fff;
+    position: absolute;
+    top: 800px;
+    left: 17.5%;
+    margin-bottom: 100px;
+    box-shadow: 3px 3px 25px 2px #ccc;
+}
+.header{
+    position: absolute;
+    top: 40px;
+    font-weight: bold;
+    font-size: 1.1em;
+    width: 300px;
+    padding: 12px 12px 12px 12px;
+    border-left: 8px rgb(37, 235, 143) solid;
+    background-color: rgb(245, 245, 245);
+}
+
+form[name="clac_avg"]{
+    position: absolute;
+    top: 130px;
+    margin-left: 40px;
+}
+
+
+#course1, #course2, #course3, #course4, #course5 {
+    padding: 5px;
+    width: 270px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+#hours1, #hours2, #hours3, #hours4, #hours5 {
+    padding: 5px;
+    background-color: #eee;
+    cursor: pointer;
+}
+#calculate, #reset{
+    width: 164px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+#calculate{
+    background-color: rgb(37, 235, 143);
+}
+#reset{
+    background-color: rgb(199, 199, 199);
+}
+#calculate:hover{
+    background-color: rgb(61, 192, 131);
+}
+#reset:hover{
+    background-color: rgb(156, 156, 156);
+}
+
+#result{
+    background-color: #eee;
+    width: 340px;
+    height: 35px;
+    position: absolute;
+    top: 560px;
+    left: 110px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    border: black 1px solid;
+    display: none;
+}
+
+/* ****** ***** ** ** *** * ** * ** */
+#bg_menu{
+    width: 280px;
+    height: 40px;
+    position: absolute;
+    top: 21px;
+    left: 935px;
+    background-color: black;
+    opacity: 0.5;
+}
+#bg_aboutIUG{
+    width: 720px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    left: 360px;
+    opacity: 0.6;
+}
+
+.employee_img{
+    width: 127px;
+    position: absolute;
+    top: 130px;
+    left: 200px;
+}
+
+.container2{
+    position: absolute;
+    top: 450px;
+    padding: 30px 50px 50px 50px;
+    margin-bottom: 50px;
+}
+
+.container2 .form-group input{
+    width: 545px;
+    height: 35px;
+    display: inline;
+    margin-bottom: 15px;
+    padding: 3px;
+    padding-left: 15px;
+    background-color: rgb(245, 245, 245);
+    border: 1.4px solid rgb(189, 189, 189);
+    font-size: 1.1em;
+}
+
+#id {
+    background-color: rgb(223, 223, 223);
+}
+
+.btn{
+    width: 750px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn button{
+    width: 140px;
+    height: 45px;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+.create{
+    background-color: #50d890;
+}
+.read{
+    background-color: #4592af;
+}
+.update{
+    background-color: #ffd369;
+}
+.delete{
+    background-color: #f65c78;
+}
+.logout{
+    background-color: #211717;
+}
+
+.create:hover{
+    background-color: #41b677;
+}
+.read:hover{
+    background-color: #377288;
+}
+.update:hover{
+    background-color: #e6bf65;
+}
+.delete:hover{
+    background-color: #bb455a;
+}
+.logout:hover{
+    background-color: rgb(8, 6, 6);
+}
+
+table{
+    width: 740px;
+    padding: 10px;
+    margin-left: -12px;
+    background-color: rgb(247, 247, 247);
+}
+table thead{
+    text-align: center;
+    background-color: #2b2b28;
+    color: #ebebe3;
+}
+table thead tr th{
+    padding: 15px;
+}
+table tbody{
+    text-align: center;
+    background-color: #ebebe3;
+    color: #2b2b28;
+}
+table tbody tr td{
+    padding: 8px;
+}
+
+.container2 h1{
+    font-weight: bold;
+    font-size: 1.8em;
+    width: 350px;
+    padding: 12px 12px 12px 12px;
+    border-left: 8px rgb(37, 235, 143) solid;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 30px;
+}

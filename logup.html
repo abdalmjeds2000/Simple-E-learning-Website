@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Learning logup</title>
+    <link rel="stylesheet" href="css/stylelogup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="msg_error"></div>
+    <div class="logo"><span style="color: rgb(37, 235, 143);">E-</span>Learning</div>
+    <div class="container">   
+        <div class="box_logup">
+            <p class="header_logup">LOG UP</p>
+            <P class="desc_logup">Hello ! Log Up now and enter your information to register on our website.</P>
+            
+            <div class="form">
+                <form method="POST" name="form_logup" id="form" onsubmit="return logup()">
+                    <input type="text" name="user_name" id="user_name" placeholder="Your Full Name *"  autocomplete="on">
+                    <input type="email" name="user_email" id="user_email" placeholder="E-Mail *" autocomplete="on">
+                    <input type="password" name="user_pass" id="user_pass" placeholder="Password *" >
+                    <input type="password" name="user_confirm_pass" id="user_confirm_pass" placeholder="Confirm-Password *">
+                    <label for="std">Student</label><input type="radio" value="std" name="choose" id="std" required checked>
+                    <label for="iug">Teacher</label><input type="radio" value="iug" name="choose" id="iug" required>
+                    <input type="submit" name="create" value="CREATE" id="btn_logup">                
+                </form>
+            </div>
+            <div class="go_login">
+                <p>you have an account? <button onclick="to_login()">Log in now!</button></p>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+
+
+
+
+
+
+
+<script src="js/script_logup.js">
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="css/styleSTD.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <img src="img/cover_std.jpg" alt="cover" class="cover">
+    <div class="logo"> <span style="color: rgb(37, 235, 143);">E-</span>Learning</div>
+
+    <ul class="menu">
+        <li><a href="#std_info">Student</a></li>
+        <li><a href="#std_avg">std-AVG</a></li>
+        <li><a onclick="signOut()">Sign Out</a></li>
+    </ul>
+    <div id="std_info"></div>
+    <div class="container">
+        <div class="photo_std">
+            <img src="img/std_img.jpg" alt="photo student">
+        </div>
+        <div class="information_std">
+            <p class="block_name" id="block_name"><span style="font-weight: 300;">I'm</span> </p>
+            <p class="job">Graphic & Web Designer</p>
+        <hr>
+        <div class="desc_std">
+                <ul class="header_info">
+                    <li>Age</li>
+                    <li>Address</li>
+                    <li>E-Mail</li>
+                    <li>Phone</li>
+                </ul>
+                <ul class="_info">
+                    <li>19 Year</li>
+                    <li>Gaza - Omar Mokhtar Street</li>
+                    <li>abdalmjeds2000@gmail.com</li>
+                    <li>+970 567 2017 15</li>
+                </ul>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div>
+            <p class="about_me">About me:</p>
+            <p class="para_about">An extensive list of verbs and phrases that, New teachers will find this resource particularly valuable when they're writing their first report cards and progress reports.</p>
+        </div>
+
+        </div>
+    </div>
+    
+
+    <div id="std_avg"></div>
+    <div class="std_avg"><br><br><br><br><br><br><br>
+        <p class="header">Calculate the quarterly Average</p>
+        <form name="clac_avg">
+            <label for="course1">Course 1 :</label><br>
+            <input type="text" name="course1" id="course1" placeholder="Enter Your Mark in Course 1 " autocomplete="off">
+            <select name="hours1" id="hours1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> <br>
+
+            <label for="course2">Course 2 :</label><br>
+            <input type="text" name="course2" id="course2" placeholder="Enter Your Mark in Course 2 " autocomplete="off">
+            <select name="hours2" id="hours2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> <br>
+
+            <label for="course3">Course 3 :</label><br>
+            <input type="text" name="course3" id="course3" placeholder="Enter Your Mark in Course 3 " autocomplete="off">
+            <select name="hours3" id="hours3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> <br>
+
+            <label for="course4">Course 4 :</label><br>
+            <input type="text" name="course4" id="course4" placeholder="Enter Your Mark in Course 4 " autocomplete="off">
+            <select name="hours4" id="hours4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> <br>
+
+            <label for="course5">Course 5 :</label><br>
+            <input type="text" name="course5" id="course5" placeholder="Enter Your Mark in Course 5 " autocomplete="off">
+            <select name="hours5" id="hours5">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select> <br>
+
+
+            <input type="button" value="Calculate" name="calculate" id="calculate" onclick="calc_avg()">
+            <input type="reset" id="reset" value="Reset" onclick="clear_result()">
+        </form>
+        <div id="result"> Your Result : 94.45%</div>
+    </div>
+
+
+
+
+    <script src="js/script_std.js"></script>
+</body>
+</html>
